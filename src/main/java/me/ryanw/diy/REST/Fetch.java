@@ -11,105 +11,105 @@ public class Fetch {
     // ***** List Results ***** //
 
     /**
-     * @return Gets a list of achievements from specified maker
+     * @return Returns the specified maker's achievements.
      */
     public static String getAchievements(int limit, int offset) {
         return baseURL + "/makers/" + makerID + "/achievements";
     }
 
     /**
-     * @return Gets all challenges for specific skill
+     * @return Returns a list of all challenges for the specified skill.
      */
     public static String getChallenges(int limit, int offset) {
         return baseURL + "/skills/" + skillID + "/challenges";
     }
 
     /**
-     * @return Gets all examples for specified challenge
+     * @return Returns a list of all examples for the specified skill.
      */
     public static String getExamples(int limit, int offset) {
         return baseURL + "/skills/" + skillID + "/challenges/" + challengeID + "/examples";
     }
 
     /**
-     * @return Gets a list of featured projects from explorer
+     * @return Returns a list of featured projects.
      */
     public static String getFeatured(int limit, int offset) {
         return baseURL + "/explore/featured";
     }
 
     /**
-     * @return Gets a list of 15 second intro projects
+     * @return Returns a list of new 15 second intro videos.
      */
     public static String getIntros(int limit, int offset) {
         return baseURL + "/explore/introducing";
     }
 
     /**
-     * @return Gets a list of trending projects
+     * @return Returns a list of trending projects.
      */
     public static String getTrending(int limit, int offset) {
         return baseURL + "/explore/trending";
     }
 
     /**
-     * @return Gets a list of clients favorite projects
+     * @return Returns the specified maker's favorite projects.
      */
     public static String getMakerFavorites(int limit, int offset) {
         return baseURL + "/makers/" + makerID + "/favorites";
     }
 
     /**
-     * @return Gets all makers that favorited a project
+     * @return Returns all makers who have favorited the specified project.
      */
     public static String getProjectFavorites(int limit, int offset) {
         return baseURL + "/makers/" + makerID + "/projects/" + projectID + "/favorites";
     }
 
     /**
-     * @return Gets a list of the clients followers
+     * @return Returns list of followers for the specified maker.
      */
     public static String getFollowers(int limit, int offset) {
         return baseURL + "/makers/" + makerID + "/followers";
     }
 
     /**
-     * @return Gets list of makers that the client follows
+     * @return Returns list of followed makers.
      */
     public static String getFollowing(int limit, int offset) {
         return baseURL + "/makers/" + makerID + "/following";
     }
 
     /**
-     * @return Gets all media clips for specified project
+     * @return Returns an array of clips for the specified project instance.
      */
     public static String getClips(int limit, int offset) {
         return baseURL + "/makers/" + makerID + "/projects/" + projectID + "/clips";
     }
 
     /**
-     * @return Gets all comments for specified project
+     * @return Returns an array of comments for the specified project instance.
      */
     public static String getComments(int limit, int offset) {
         return baseURL + "/makers/" + makerID + "/projects/" + projectID + "/comments";
     }
 
     /**
-     * @return Gets all projects for specified makerID
+     * @return Returns the specified maker's projects.
      */
     public static String getProjects(int limit, int offset) {
         return baseURL + "/makers/" + makerID + "/projects";
     }
 
     /**
-     * @return Gets a list of skills from skills page
+     * @return Returns all skills.
      */
     public static String getSkills(int limit, int offset) {
         return baseURL + "/skills";
     }
 
     /**
-     * @return Gets a list of all materials needed to complete a challenge
+     * @return Returns a list of all materials for the specified skill.
      */
     public static String getMaterials(int limit, int offset) {
         return baseURL + "/skills/" + skillID + "/materials";
@@ -119,42 +119,42 @@ public class Fetch {
     // ***** Single Results ***** //
 
     /**
-     * @return Gets authentification address
+     * @return Returns an authorization object including HMAC token, maker ID and type information
      */
     public static String Authorization() {
         return baseURL + "/authorize";
     }
 
     /**
-     * @return Returns a single specified challenge for specified skill
+     * @return Returns a single challenge by id.
      */
     public static String getChallenge() {
         return baseURL + "/skills/" + skillID + "/challenges/" + challengeID;
     }
 
     /**
-     * @return Gets a example for completing a specific challenge
+     * @return Returns a single example by id.
      */
     public static String getExample() {
         return baseURL + "/skills/" + skillID +"/challenges/" + challengeID;
     }
 
     /**
-     * @return Gets a specific project based on makerID and projectID
+     * @return Returns the specified project instance.
      */
     public static String getProject() {
         return baseURL + "/makers/" + makerID + "/projects/" + projectID;
     }
 
     /**
-     * @return Gets the specific maker instance
+     * @return Returns the specified maker instance.
      */
     public static String getMaker() {
         return baseURL + "/makers/" + makerID;
     }
 
     /**
-     * @return Gets a specific skill based on its ID
+     * @return Returns the specified skill instance.
      */
     public static String getSkill() {
         return baseURL + "/skills/" + skillID;
