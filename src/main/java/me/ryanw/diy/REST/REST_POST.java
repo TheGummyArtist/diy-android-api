@@ -2,65 +2,71 @@ package me.ryanw.diy.REST;
 
 public class REST_POST {
 
-    private static String makerID;
-    private static String challengeID;
-    private static String skillID;
-    private static String projectID;
-    private static String baseURL = "https://api.diy.org";
-
     /**
-     * @return Creates a new maker achivement for the specified project and challenge id.
+     * Achievement - Achievements represent completed and pending challenge solutions for a maker.
+     * @return Creates a new maker achievement for the specified project and challenge id.
      */
     public static String addAchievement(int projectID, int challengeID) {
-        return baseURL + "/makers/" + makerID + "/achievements";
+        return REST.getBaseURL() + "/makers/" + REST.getMakerID() + "/achievements";
     }
 
     /**
+     * Clip - A clip represents a single piece of media from a maker related to a project.
      * @return Creates a new clip for the specified project.
      */
     public static String addClip() {
-        return baseURL + "/makers/" + makerID + "/projects/" + projectID + "/clips";
+        return REST.getBaseURL() + "/makers/" + REST.getMakerID()
+                + "/projects/" + REST.getProjectID() + "/clips";
     }
 
     /**
+     * Comment - A comment represents a single text object from a maker related to a project.
      * @return Creates a new comment for the specified project.
      */
     public static String addComment() {
-        return baseURL + "/makers/" + makerID + "/projects/" + projectID + "/comments";
+        return REST.getBaseURL() + "/makers/" + REST.getMakerID()
+                + "/projects/" + REST.getProjectID() + "/comments";
     }
 
     /**
+     * Example - An example represents a reference or guide for completing a challenge.
      * @return Creates a new example for the specified skill and challenge.
      */
     public static String addExample() {
-        return baseURL + "/skills/" + skillID + "/challenges/" + challengeID + "/examples";
+        return REST.getBaseURL() + "/skills/" + REST.getSkillID()
+                + "/challenges/" + REST.getChallengeID() + "/examples";
     }
 
     /**
+     * Favorite - Favorites represent projects that have been selected by a maker.
      * @return Creates a new favorite for the specified project.
      */
     public static String addFavorite() {
-        return baseURL + "/makers/" + makerID + "/projects/" + projectID + "/favorites";
+        return REST.getBaseURL() + "/makers/" + REST.getMakerID()
+                + "/projects/" + REST.getProjectID() + "/favorites";
     }
 
     /**
+     * Friend - Friends represent makers that have been either followed or are following a maker.
      * @return Adds a new follower.
      */
     public static String addFollower() {
-        return baseURL + "/makers/" + makerID + "/following";
+        return REST.getBaseURL() + "/makers/" + REST.getMakerID() + "/following";
     }
 
     /**
+     * Project - A project represents a collection of unique shots of various media types from a maker.
      * @return Creates a new project instance.
      */
     public static String addProject() {
-        return baseURL + "/makers/" + makerID + "/projects";
+        return REST.getBaseURL() + "/makers/" + REST.getMakerID() + "/projects";
     }
 
     /**
+     * Maker - A maker represents a single child user within the DIY ecosystem.
      * @return Creates a new maker instance.
      */
     public static String addMaker() {
-        return baseURL + "/makers";
+        return REST.getBaseURL() + "/makers";
     }
 }
