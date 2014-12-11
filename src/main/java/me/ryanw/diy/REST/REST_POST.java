@@ -1,6 +1,6 @@
 package me.ryanw.diy.REST;
 
-public class Send {
+public class REST_POST {
 
     private static String makerID;
     private static String challengeID;
