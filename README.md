@@ -18,7 +18,7 @@ Features
 * :x: Working authentification
 * :x: Json to Java object conversion
 * :x: Fully functional object setting and getting
-* :x: Complete Android compatibility for all versions
+* :white_check_mark: Complete Android compatibility for all versions
 * :x: Complete data encryption
 * :x: RESTful API including "GET" and "POST"
 * :x: HMAC token storage
