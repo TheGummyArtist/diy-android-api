@@ -3,43 +3,43 @@ package me.ryanw.diy.REST;
 public class REST {
 
     private static String baseURL;
-    private static Long makerID;
-    private static Long projectID;
-    private static Long clipID;
-    private static Long commentID;
-    private static Long skillID;
-    private static Long challengeID;
-    private static Long exampleID;
+    private static int makerID;
+    private static int projectID;
+    private static int clipID;
+    private static int commentID;
+    private static int skillID;
+    private static int challengeID;
+    private static int exampleID;
 
     public static String getBaseURL() {
         return baseURL;
     }
 
-    public static Long getMakerID() {
+    public static int getMakerID() {
         return makerID;
     }
 
-    public static Long getProjectID() {
+    public static int getProjectID() {
         return projectID;
     }
 
-    public static Long getClipID() {
+    public static int getClipID() {
         return clipID;
     }
 
-    public static Long getCommentID() {
+    public static int getCommentID() {
         return commentID;
     }
 
-    public static Long getSkillID() {
+    public static int getSkillID() {
         return skillID;
     }
 
-    public static Long getChallengeID() {
+    public static int getChallengeID() {
         return challengeID;
     }
 
-    public static Long getExampleID() {
+    public static int getExampleID() {
         return exampleID;
     }
 
@@ -47,31 +47,31 @@ public class REST {
         REST.baseURL = URL;
     }
 
-    public static void setMakerID(Long ID) {
+    public static void setMakerID(int ID) {
         REST.makerID = ID;
     }
 
-    public static void setProjectID(Long ID) {
+    public static void setProjectID(int ID) {
         REST.projectID = ID;
     }
 
-    public static void setClipID(Long ID) {
+    public static void setClipID(int ID) {
         REST.clipID = ID;
     }
 
-    public static void setCommentID(Long ID) {
+    public static void setCommentID(int ID) {
         REST.commentID = ID;
     }
 
-    public static void setSkillID(Long ID) {
+    public static void setSkillID(int ID) {
         REST.skillID = ID;
     }
 
-    public static void setChallengeID(Long ID) {
+    public static void setChallengeID(int ID) {
         REST.challengeID = ID;
     }
 
-    public static void setExampleID(Long ID) {
+    public static void setExampleID(int ID) {
         REST.exampleID = ID;
     }
 
