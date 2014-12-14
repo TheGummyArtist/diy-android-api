@@ -20,7 +20,7 @@ Features
 * :x: Fully functional object setting and getting
 * :white_check_mark: Complete Android compatibility for all versions
 * :x: Complete data encryption
-* :x: RESTful API including "GET" and "POST"
+* :white_check_mark: RESTful API including "GET" and "POST"
 * :x: HMAC token storage
 * :x: Complete API versioning
 * :x: Priority loading system

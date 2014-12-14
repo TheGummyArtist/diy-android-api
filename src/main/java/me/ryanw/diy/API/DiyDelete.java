@@ -1,14 +1,14 @@
-package me.ryanw.diy.REST;
+package me.ryanw.diy.API;
 
-public class REST_DELETE {
+public class DiyDelete {
 
     /**
      * Clips - A clip represents a single piece of media from a maker related to a project.
      * @return Deletes a specified clip.
      */
     public static String removeClip() {
-        return REST.getBaseURL() + "/makers/" + REST.getMakerID()
-                + "/projects/" + REST.getProjectID() + "/clips/" + REST.getClipID();
+        return QueryData.getBaseURL() + "/makers/" + QueryData.getMakerID()
+                + "/projects/" + QueryData.getProjectID() + "/clips/" + QueryData.getClipID();
     }
 
     /**
@@ -16,8 +16,8 @@ public class REST_DELETE {
      * @return Deletes a specified comment.
      */
     public static String removeComment() {
-        return REST.getBaseURL() + "/makers/" + REST.getMakerID()
-                + "/projects/"  + REST.getProjectID() + "/comments/" + REST.getCommentID();
+        return QueryData.getBaseURL() + "/makers/" + QueryData.getMakerID()
+                + "/projects/"  + QueryData.getProjectID() + "/comments/" + QueryData.getCommentID();
     }
 
     /**
@@ -25,8 +25,8 @@ public class REST_DELETE {
      * @return Removes a example for the specified skill and challenge.
      */
     public static String removeExample() {
-        return REST.getBaseURL() + "/skills/" + REST.getSkillID()
-                + "/challenges/" + REST.getChallengeID() + "/examples/" + REST.getExampleID();
+        return QueryData.getBaseURL() + "/skills/" + QueryData.getSkillID()
+                + "/challenges/" + QueryData.getChallengeID() + "/examples/" + QueryData.getExampleID();
     }
 
     /**
@@ -34,8 +34,8 @@ public class REST_DELETE {
      * @return Removes a favorite for the specified project.
      */
     public static String removeFavorite() {
-        return REST.getBaseURL() + "/makers/" + REST.getMakerID()
-                + "/projects/" + REST.getProjectID() + "/favorites";
+        return QueryData.getBaseURL() + "/makers/" + QueryData.getMakerID()
+                + "/projects/" + QueryData.getProjectID() + "/favorites";
     }
 
     /**
@@ -43,7 +43,7 @@ public class REST_DELETE {
      * @return Removes a follower.
      */
     public static String removeFollower() {
-        return REST.getBaseURL() + "/makers/" + REST.getMakerID() + "/following";
+        return QueryData.getBaseURL() + "/makers/" + QueryData.getMakerID() + "/following";
     }
 
     /**
@@ -51,6 +51,8 @@ public class REST_DELETE {
      * @return Deletes the specified project instance.
      */
     public static String removeProject() {
-        return REST.getBaseURL() + "/makers/" + REST.getMakerID() + "/projects/" + REST.getProjectID();
+        return QueryData.getBaseURL() + "/makers/" + QueryData.getMakerID() + "/projects/" + QueryData.getProjectID();
     }
+
+    // End of file
 }

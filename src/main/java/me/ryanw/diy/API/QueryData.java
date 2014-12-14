@@ -1,6 +1,6 @@
-package me.ryanw.diy.REST;
+package me.ryanw.diy.API;
 
-public class REST {
+public class QueryData {
 
     private static String baseURL;
     private static int makerID;
@@ -44,39 +44,34 @@ public class REST {
     }
 
     public static void setBaseURL(String URL) {
-        REST.baseURL = URL;
+        QueryData.baseURL = URL;
     }
 
     public static void setMakerID(int ID) {
-        REST.makerID = ID;
+        QueryData.makerID = ID;
     }
 
     public static void setProjectID(int ID) {
-        REST.projectID = ID;
+        QueryData.projectID = ID;
     }
 
     public static void setClipID(int ID) {
-        REST.clipID = ID;
+        QueryData.clipID = ID;
     }
 
     public static void setCommentID(int ID) {
-        REST.commentID = ID;
+        QueryData.commentID = ID;
     }
 
     public static void setSkillID(int ID) {
-        REST.skillID = ID;
+        QueryData.skillID = ID;
     }
 
     public static void setChallengeID(int ID) {
-        REST.challengeID = ID;
+        QueryData.challengeID = ID;
     }
 
     public static void setExampleID(int ID) {
-        REST.exampleID = ID;
+        QueryData.exampleID = ID;
     }
-
-
-
-
-
 }
