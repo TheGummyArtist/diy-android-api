@@ -1,4 +1,4 @@
-Diy Android API [![Build Status](https://travis-ci.org/rywarsaw/diy-android-api.svg)](https://travis-ci.org/rywarsaw/diy-android-api)
+Diy Android API [![Build Status](https://travis-ci.com/rywarsaw/diy-android-api.svg)](https://travis-ci.com/rywarsaw/diy-android-api)
 -
 A Java API wrapper that communicates with diy.org's API using RESTful!
 
