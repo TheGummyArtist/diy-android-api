@@ -9,6 +9,7 @@ public class QueryData {
     private static int commentID;
     private static int skillID;
     private static int challengeID;
+    private static int achievementID;
     private static int exampleID;
 
     public static String getBaseURL() {
@@ -43,6 +44,8 @@ public class QueryData {
         return exampleID;
     }
 
+    public static int getAchievementID() { return achievementID; }
+
     public static void setBaseURL(String URL) {
         QueryData.baseURL = URL;
     }
@@ -74,4 +77,6 @@ public class QueryData {
     public static void setExampleID(int ID) {
         QueryData.exampleID = ID;
     }
+
+    public static void setAchievementID(int ID) {QueryData.achievementID = ID; }
 }

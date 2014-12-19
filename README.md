@@ -15,9 +15,9 @@ Dependencies
 
 Features
 -
-* :x: Working authentification
+* :white_check_mark: Working authentification
 * :x: Json to Java object conversion
-* :x: Fully functional object setting and getting
+* :white_check_mark: Fully functional object setting and getting
 * :white_check_mark: Complete Android compatibility for all versions
 * :x: Complete data encryption
 * :white_check_mark: RESTful API including "GET" and "POST"
