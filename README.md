@@ -6,12 +6,14 @@ Introduction
 -
 The goal behind this API is to make a light weight blazing fast system that can easily use "GET" and "POST" functions for diy.org's website API. Then converting these functions into Java Objects to be easily deployed in a Android app!
 
+Edit: We are now open source!
+
 Dependencies
 -
 * GSON (Google's JSON processing API for Java)
 * Apache HttpClient 4.4 (Basic Authentification)
 * Apache Commons (Helpful utilities)
-* Java 6 (Mac compatible development)
+* Java SE 8 (Latest)
 
 Features
 -
