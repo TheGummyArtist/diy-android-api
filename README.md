@@ -4,7 +4,7 @@ A Java API wrapper that communicates with diy.org's API using RESTful!
 
 Introduction
 -
-The goal behind this API is to make a light weight blazing fast system that can easily use "GET" and "POST" functions for diy.org's website API. Then converting these functions into Java Objects to be easily deployed in a Android app!
+The goal behind this API is to make a light weight, blazing fast system that can easily use "GET" and "POST" functions for diy.org's website API, then converting these functions into Java Objects to be easily deployed in a Android app!
 
 Edit: We are now open source!
 
